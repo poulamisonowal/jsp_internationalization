@@ -1,0 +1,35 @@
+Add the resource properties in our project
+
+Add a package in src folder. Name the package as i18n. Create a text file name it as website.properties and add label and some values inside it
+website.properties(this one is for default language)
+label.hello=Hello
+label.welcome=Welcome to our country
+label.message=We are pleased with your presence
+label.thanks=thank you
+
+
+similarly create 4 text resource files for other languages
+
+website.hi_IN.properties(hindi language)
+label.hello=\u0928\u092E\u0938\u094D\u0924\u0947
+label.welcome=\u0939\u092E\u093E\u0930\u0947 \u0926\u0947\u0936 \u092E\u0947\u0902 \u0906\u092A\u0915\u093E \u0938\u094D\u0935\u093E\u0917\u0924 \u0939\u0948
+label.message=\u0939\u092E \u0906\u092A\u0915\u0940 \u0909\u092A\u0938\u094D\u0925\u093F\u0924\u093F \u0915\u0947 \u0938\u093E\u0925 \u0916\u0941\u0936 \u0939\u0948\u0902
+label.thanks=\u0927\u0928\u094D\u092F\u0935\u093E\u0926
+
+website.es_AR.properties(spanish Argentina)
+label.hello=Hola
+label.welcome=Bienvenido a nuestro país
+label.message=Estamos muy satisfechos con su presencia
+label.thanks=Gracias
+
+website.ru_RU.properties(russian)
+label.hello=\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435
+label.welcome=\u0414\u043E\u0431\u0440\u043E \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u0430\u0448\u0443 \u0441\u0442\u0440\u0430\u043D\u0443
+label.message=\u041C\u044B \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u044B \u0441\u0432\u043E\u0438\u043C \u043F\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u0435\u043C
+label.thanks=\u0441\u043F\u0430\u0441\u0438\u0431\u043E
+
+I have translated hello, Welcome to our country,We are pleased with your presence,thank you to respective langueages i.e hindi, spanish, russian using google translater. Copy paste 
+the output in reource files.
+
+ 
+
