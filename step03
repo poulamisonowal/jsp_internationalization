@@ -1,0 +1,60 @@
+Use <fmt> tag from jstl library
+So now when user clicks something from the following links paramater locale value will get set. If user select spanish loccale will set to es_ArR. If user clicks on hindi locale value
+will be set to hi_IN.
+View website in:
+<a href="?locale=en_US">English(US)</a>|
+<a href="?locale=es_AR">Spanish</a>|
+<a href="?locale=ru_RU">Russian</a>|
+<a href="?locale=hi_IN">Hindi</a>
+
+The locale value we will use in our code 
+<fmt:setLocale value="${param.locale}"/>
+s
+So again if user clicks russian fmt setLocale will set the locale value as ru_RU
+
+Using this setLocale the corresponding resource file will get open. We will do that in jsp code by following code
+<fmt:bundle basename="i18n/website">
+
+So now your index.jsp page will become
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>I18N Demo</title>
+</head>
+<body>
+View website in:
+<a href="?locale=en_US">English(US)</a>|
+<a href="?locale=es_AR">Spanish</a>|
+<a href="?locale=ru_RU">Russian</a>|
+<a href="?locale=hi_IN">Hindi</a>
+<br/>
+<br/>
+<hr/>
+
+Locale: ${param.locale}
+<fmt:setLocale value="${param.locale}"/>
+
+<fmt:bundle basename="i18n/website">
+<p><fmt:message key="label.hello"/> John, 
+<p><fmt:message key="label.welcome"/>
+<p><fmt:message key="label.message"/>
+<p><fmt:message key="label.thanks"/>
+</fmt:bundle>
+<br/>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
